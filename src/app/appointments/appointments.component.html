@@ -1,0 +1,21 @@
+<h3>Add Client</h3>
+<div>
+    <form [formGroup]="clientForm" (ngSubmit)="addClientToDB()">
+        <p>Client First Name:</p>
+        <input type="text" id="clientFirstName" placeholder="Sydney" formControlName="firstName">
+        <br>
+        <p>Client Last Name:</p>
+        <input type="text" id="clientLastName" placeholder="Meyers" formControlName="lastName">
+        <br>
+        <p>Meeting Date</p>
+        <input type="text" id="date" placeholder="7/28/2022" formControlName="date">
+        <br>
+        <p>Description</p>
+        <input type="text" id="meetingDescription" placeholder="Description" formControlName="description">
+        <br>
+        <button type="submit">Add Client</button>
+<h3>All Appointments</h3>
+<p *ngFor="let Client of appointments">
+    {{Client.cid}} | {{Client.firstName}} | {{Client.lastName}} | {{Client.date}} | {{Client.description}}
+
+</p>
