@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container
+            {
+                margin: auto;
+                width: 50%;
+                padding: 16px;
+                background-color: whitesmoke;
+                box-shadow: 20px 20px 20px 0px rgb(0, 0, 0);
+            }
+            *   {
+                box-sizing: border-box;
+            }
+            body
+            {
+                background-image: url('https://wallpapercave.com/wp/wp8457060.jpg');
+                background-size: 100% 100%;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+            input[type=text]
+            {
+                width: auto;
+                display: inline;
+                border: 1px solid whitesmoke;
+                box-sizing: border-box;
+                padding: 16px;
+                margin: 8px;
+            }
+            input[type=password]
+            {
+                width: auto;
+                display: inline;
+                border: 1px solid whitesmoke;
+                box-sizing: border-box;
+                padding: 16px;
+                margin: 8px;
+            }
+            input[type=checkbox]
+            {
+                width: auto;
+                display: inline;
+                border: 1px solid whitesmoke;
+                box-sizing: border-box;
+                padding: 16px;
+                margin: 8px;
+            }
+            input[type=submit]
+            {
+                width: auto;
+                background-color: cornflowerblue;
+                color: whitesmoke;
+                display: inline;
+                border: none;
+                border-radius: 8px;
+                padding: 16px;
+                margin: 8px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+        <h3>Welcome, Please Login with your details</h3>
+        <form action="index.html" method="post">
+        <img src="C:\Users\Redux\Desktop\Stuff for coding\loginIcon.png" alt="Login" width="100" height="100">
+        <br>
+        <b>User Name</b>
+        <br>
+        <input type="text" name="txtUserName" placeholder="john@example.com" required>
+        <br>
+        <b>Password</b>
+        <br>
+        <input type="password" name="txtPassword" placeholder="john@example.com" required>
+        <br>
+        <input type="checkbox" checked="checked" name="rememberMe"> Remember Me
+        <br>
+        <input type="submit" value="Login">
+        <br>
+        <a href="annahome.html"> New User? Register Here</a>
+        </form>
+        </div>
+    </body>
+</html>
